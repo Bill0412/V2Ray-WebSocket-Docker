@@ -1,0 +1,2 @@
+*/3 * * * * /usr/bin/node /usr/src/node/libs/record_traffic.js
+*/3 * * * * /usr/bin/node /usr/src/node/libs/record_log_timing.js

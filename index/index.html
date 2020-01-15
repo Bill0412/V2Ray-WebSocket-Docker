@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://www.h5jun.com/ -->
+<html lang="zh-CN" class=" pc"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"> <link rel="icon" href="https://www.h5jun.com/">  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://www.h5jun.com/rss.html"> <meta name="keywords" content="前端开发,HTML5,H5,JavaScript,Web开发,ECMAScript,ES6,ES7,ESnext"> <meta name="description" content="专注于前端开发"> <title>
+  十年踪迹的博客
+</title><script src="./十年踪迹的博客_files/hm.js"></script><script type="text/javascript" async="" src="./十年踪迹的博客_files/vds.js"></script><script>!function(t,n){function e(t){return n.getElementById(t)}function r(){l("stc_nls",1,1)}function i(e,r){var i="";try{i=h[e]||"",i.length<99&&(l(r,0),n.documentElement.style.display="none",f(),t.onbeforeunload=null,location.reload(!0))}catch(o){f()}return i}function o(t,n){try{h[t]=n,n!==h[t]&&f()}catch(e){f()} }function c(t){for(var e,r=n.cookie.split("; "),i=0,o=r.length;o>i;i++)if(e=r[i].split("="),e[0]===t)return e[1];return""}function l(t,e,r){r=r||60,e||(r=-1),r=new Date(+new Date+864e5*r).toGMTString();var i=t+"="+e+"; path=/; expires="+r;location.protocol.indexOf("https")>-1&&(i+="; Secure"),n.cookie=i}function a(t,n){var r=e(n)&&e(n).innerHTML.trim();o(t,r)}function u(e,r,o){var c=i(e,o);if(t.execScript&&"script"===r)return t.execScript(c);var l=n.createElement(r);l.innerHTML=c,n.head.appendChild(l)}function f(){for(var t=/(?:;)?stc_[^=]*=[^;]*;?/g,e=n.cookie.match(t)||[],r=e.length;r;)--r,l(e[r].split("=")[0],0)}function s(t,n,e){for(var r=c(t).split(""),i=!1,o=0,a=r.length;a>o;o+=2)if(r[o]===n){r[o+1]=e,i=!0;break}i||r.push(n,e),l(t,r.join(""))}var h,p=function(){},m=t.LS={html2ls:p,ls2html:p,updateVersion:p};try{h=localStorage,m.html2ls=a,m.ls2html=u,m.updateVersion=s}catch(d){r()} }(this,document);</script><style id="stc_css_firekylin">*{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0;color:#666;-webkit-text-size-adjust:none;-webkit-transition:-webkit-transform .2s cubic-bezier(.4,.01,.165,.99);transition:transform .2s cubic-bezier(.4,.01,.165,.99),-webkit-transform .2s cubic-bezier(.4,.01,.165,.99);-webkit-tap-highlight-color:transparent;font-family:"Helvetica Neue",Arial,"Hiragino Sans GB",STHeiti,"Microsoft YaHei";-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch}body,html{width:100%;height:100% }h1,h2,h3,h4,h5,h6{margin:0;padding:0}a,a:hover{color:#2479CC;text-decoration:none}ul,ol{padding:0}body.side{position:fixed;-webkit-transform:translate3D(250px,0,0);-ms-transform:translate3D(250px,0,0);transform:translate3D(250px,0,0)}h1.intro{padding:20px 30px;background-color:#f6f9fa;text-align:center;color:#999}#main{background-color:#fff;padding-left:290px;padding-right:40px;max-width:1390px;-webkit-overflow-scrolling:touch}@font-face{font-family:iconfont;src:url(/theme/firekylin/res/font/iconfont.eot);src:url(/theme/firekylin/res/font/iconfont.eot?#iefix) format("embedded-opentype"),url(/theme/firekylin/res/font/iconfont.ttf) format("truetype"),url(/theme/firekylin/res/font/iconfont.svg#iconfont) format("svg");}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}.icon-weibo:before{content:"\e600"}.icon-archive:before{content:"\e601"}.icon-user:before{content:"\e602"}.icon-rss-v:before{content:"\e603"}.icon-tags:before{content:"\e604"}.icon-home:before{content:"\e605"}.icon-search:before{content:"\e606"}.icon-googleplus:before{content:"\e607"}.icon-weixin:before{content:"\e608"}.icon-mail:before{content:"\e609"}.icon-twitter-v:before{content:"\e60a"}.icon-linkedin:before{content:"\e60b"}.icon-stackoverflow:before{content:"\e60c"}.icon-github-v:before{content:"\e60d"}.icon-facebook:before{content:"\e60e"}.icon-right:before{content:"\e60f"}.icon-left:before{content:"\e610"}.icon-link:before{content:"\e611"}.icon-https:before{content:"\e612"}.hljs{display:block;background:white;padding:.5em;color:#333;overflow-x:auto;-webkit-text-size-adjust:none}.hljs-comment,.lang-bash .hljs-shebang,.lang-java .hljs-javadoc,.lang-javascript .hljs-javadoc,.lang-rust .hljs-preprocessor{color:#969896}.hljs-string,.lang-apache .hljs-sqbracket,.lang-coffeescript .hljs-subst,.lang-coffeescript .hljs-regexp,.lang-cpp .hljs-preprocessor,.lang-c .hljs-preprocessor,.lang-javascript .hljs-regexp,.lang-json .hljs-attribute,.lang-makefile .hljs-variable,.lang-markdown .hljs-value,.lang-markdown .hljs-link_label,.lang-markdown .hljs-strong,.lang-markdown .hljs-emphasis,.lang-markdown .hljs-blockquote,.lang-nginx .hljs-regexp,.lang-nginx .hljs-number,.lang-objectivec .hljs-preprocessor .hljs-title,.lang-perl .hljs-regexp,.lang-php .hljs-regexp,.lang-xml .hljs-value,.lang-less .hljs-built_in,.lang-scss .hljs-built_in{color:#df5000}.hljs-keyword,.lang-css .hljs-at_rule,.lang-css .hljs-important,.lang-http .hljs-request,.lang-ini .hljs-setting,.lang-haskell .hljs-type,.lang-java .hljs-javadoctag,.lang-javascript .hljs-tag,.lang-javascript .hljs-javadoctag,.lang-nginx .hljs-title,.lang-objectivec .hljs-preprocessor,.lang-php .hljs-phpdoc,.lang-sql .hljs-built_in,.lang-less .hljs-tag,.lang-less .hljs-at_rule,.lang-scss .hljs-tag,.lang-scss .hljs-at_rule,.lang-scss .hljs-important,.lang-stylus .hljs-at_rule,.lang-go .hljs-typename,.lang-swift .hljs-preprocessor{color:#a71d5d}.lang-apache .hljs-common,.lang-apache .hljs-cbracket,.lang-apache .hljs-keyword,.lang-bash .hljs-literal,.lang-bash .hljs-built_in,.lang-coffeescript .hljs-literal,.lang-coffeescript .hljs-built_in,.lang-coffeescript .hljs-number,.lang-cpp .hljs-number,.lang-cpp .hljs-built_in,.lang-c .hljs-number,.lang-c .hljs-built_in,.lang-cs .hljs-number,.lang-cs .hljs-built_in,.lang-css .hljs-attribute,.lang-css .hljs-hexcolor,.lang-css .hljs-number,.lang-css .hljs-function,.lang-haskell .hljs-number,.lang-http .hljs-literal,.lang-http .hljs-attribute,.lang-java .hljs-number,.lang-javascript .hljs-built_in,.lang-javascript .hljs-literal,.lang-javascript .hljs-number,.lang-json .hljs-number,.lang-makefile .hljs-keyword,.lang-markdown .hljs-link_reference,.lang-nginx .hljs-built_in,.lang-objectivec .hljs-literal,.lang-objectivec .hljs-number,.lang-objectivec .hljs-built_in,.lang-php .hljs-literal,.lang-php .hljs-number,.lang-python .hljs-number,.lang-ruby .hljs-prompt,.lang-ruby .hljs-constant,.lang-ruby .hljs-number,.lang-ruby .hljs-subst .hljs-keyword,.lang-ruby .hljs-symbol,.lang-rust .hljs-number,.lang-sql .hljs-number,.lang-puppet .hljs-function,.lang-less .hljs-number,.lang-less .hljs-hexcolor,.lang-less .hljs-function,.lang-less .hljs-attribute,.lang-scss .hljs-preprocessor,.lang-scss .hljs-number,.lang-scss .hljs-hexcolor,.lang-scss .hljs-function,.lang-scss .hljs-attribute,.lang-stylus .hljs-number,.lang-stylus .hljs-hexcolor,.lang-stylus .hljs-attribute,.lang-stylus .hljs-params,.lang-go .hljs-built_in,.lang-go .hljs-constant,.lang-swift .hljs-built_in,.lang-swift .hljs-number{color:#0086b3}.lang-apache .hljs-tag,.lang-cs .hljs-xmlDocTag,.lang-css .hljs-tag,.lang-xml .hljs-title,.lang-stylus .hljs-tag{color:#63a35c}.lang-bash .hljs-variable,.lang-cs .hljs-preprocessor,.lang-cs .hljs-preprocessor .hljs-keyword,.lang-css .hljs-attr_selector,.lang-css .hljs-value,.lang-ini .hljs-value,.lang-ini .hljs-keyword,.lang-javascript .hljs-tag .hljs-title,.lang-makefile .hljs-constant,.lang-nginx .hljs-variable,.lang-xml .hljs-tag,.lang-scss .hljs-variable{color:#333}.lang-bash .hljs-title,.lang-coffeescript .hljs-title,.lang-cpp .hljs-title,.lang-c .hljs-title,.lang-cs .hljs-title,.lang-css .hljs-id,.lang-css .hljs-class,.lang-css .hljs-pseudo,.lang-ini .hljs-title,.lang-haskell .hljs-title,.lang-haskell .hljs-pragma,.lang-java .hljs-title,.lang-javascript .hljs-title,.lang-makefile .hljs-title,.lang-objectivec .hljs-title,.lang-perl .hljs-sub,.lang-php .hljs-title,.lang-python .hljs-decorator,.lang-python .hljs-title,.lang-ruby .hljs-parent,.lang-ruby .hljs-title,.lang-rust .hljs-title,.lang-xml .hljs-attribute,.lang-puppet .hljs-title,.lang-less .hljs-id,.lang-less .hljs-pseudo,.lang-less .hljs-class,.lang-scss .hljs-id,.lang-scss .hljs-pseudo,.lang-scss .hljs-class,.lang-stylus .hljs-class,.lang-stylus .hljs-id,.lang-stylus .hljs-pseudo,.lang-stylus .hljs-title,.lang-swift .hljs-title,.lang-diff .hljs-chunk{color:#795da3}.lang-coffeescript .hljs-reserved,.lang-coffeescript .hljs-attribute{color:#1d3e81}.lang-diff .hljs-chunk{font-weight:700}.lang-diff .hljs-addition{color:#55a532;background-color:#eaffea}.lang-diff .hljs-deletion{color:#bd2c00;background-color:#ffecec}.lang-markdown .hljs-link_url{text-decoration:underline}#sidebar{width:250px;height:100%;position:fixed;left:0;top:0;background-color:#202020;overflow:auto;z-index:1;-webkit-overflow-scrolling:touch}#sidebar li,#sidebar ul{margin:0;padding:0;list-style:none}#sidebar .profile{padding-top:40px;padding-bottom:10px}#sidebar .profile a,#sidebar .profile img{width:140px;height:140px;border-radius:70px;overflow:hidden}#sidebar .profile a{display:block;margin:0 auto}#sidebar .profile span{display:block;padding:10px 0;font-size:18px;color:#999;text-align:center}#sidebar .buttons{margin:0 0 20px}#sidebar .buttons li{display:block;width:100%;height:45px;line-height:45px;font-size:16px}#sidebar .buttons li a{padding-left:25px;display:block;color:#999;-webkit-transition:color .2s cubic-bezier(.4,.01,.165,.99);transition:color .2s cubic-bezier(.4,.01,.165,.99);text-decoration:none}#sidebar .buttons li a i,#sidebar .buttons li a span{display:inline-block;vertical-align:middle}#sidebar .buttons li a i{font-size:20px;width:25px;height:45px;line-height:45px;text-align:center;margin-right:20px}#sidebar .buttons li a:hover{color:rgba(153,153,153,.8)}#sidebar .buttons li a.inline{display:inline-block;width:40px}#sidebar-mask,#header{left:0;top:0;overflow:hidden;display:none}#sidebar-mask{position:absolute;right:0;bottom:0;z-index:999;background-color:rgba(255,255,255,0)}#header{width:100%;height:50px;line-height:50px;position:fixed;z-index:9;background-color:#323436}body.side #header .btn-bar:before{width:24px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);top:25px}body.side #header .btn-bar:after{width:24px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);bottom:24px}body.side #header .btn-bar i{opacity:0}#header h1{text-align:center;font-size:16px}#header h1 a{color:#999}#header .btn-bar{width:50px;height:50px;position:absolute;left:0;top:0}#header .btn-bar i,#header .btn-bar:after,#header .btn-bar:before{width:22px;height:1px;position:absolute;left:14px;background-color:#999;-webkit-transition:all .2s cubic-bezier(.4,.01,.165,.99) .3s;transition:all .2s cubic-bezier(.4,.01,.165,.99) .3s}#header .btn-bar i{top:25px;opacity:1}#header .btn-bar:before{content:'';top:17px}#header .btn-bar:after{content:'';bottom:16px}#header a.me,#header a.me img{width:30px;height:30px;border-radius:30px;overflow:hidden}#header a.me{position:absolute;right:10px;top:10px}.pagination{width:100%;line-height:20px;position:relative;border-top:1px solid #fff;border-bottom:1px solid #ddd;padding:20px 0;overflow:hidden}.pagination .prev{float:left}.pagination .next{float:right}.pagination .center{text-align:center;width:80px;margin:auto}article{border-bottom:1px solid #ddd;border-top:1px solid #fff;position:relative;padding:30px 0;word-wrap:break-word}article .meta{position:relative;float:right;color:#555;font-size:.9em;line-height:2;width:auto;text-align:right}article .meta a{color:#999}article .meta .date,article .meta .comment,article .meta .tags{position:relative}article h1.title,article h1.title a{color:#333}article h1.title{font-size:2em;font-weight:300;line-height:35px;margin-bottom:25px}article h1.title a:hover{color:#2479CC;transition:color .3s}article button,article input.runcode{line-height:1;border:none;cursor:pointer;padding:.625em .5em;box-shadow:inset 0 -5px 20px rgba(0,0,0,.1);background:#12b0e6;color:#fff;font-size:14px;margin-top:10px;-webkit-appearance:button}article input.runcode:hover,article input.runcode:focus,article input.runcode:active{background:#f6ad08}article strong{font-weight:700}article em{font-style:italic}article blockquote{margin:10px 0 0;padding:15px 20px;border-left:5px solid #2479CC;background-color:#f8f8f8}article blockquote p{margin-bottom:0}article blockquote a{word-break:break-all;word-wrap:break-word}article code{font-family:"Consolas","Courier New",Courier,mono,serif;font-size:80%;margin:0 2px;padding:4px 5px;background-color:#f2f2f2;vertical-align:middle;border-radius:5px}article pre{font-family:"Consolas","Liberation Mono",Courier,monospace;font-size:14px;line-height:1.6;color:#5d6a6a;padding:.6em;border-left:5px solid #ccc;word-break:break-all;word-wrap:break-word;white-space:pre-wrap;position:relative;overflow:hidden}article pre code{border-radius:0 0 0 0;background-color:transparent;border:0;padding:0;margin:0;font-size:100%;display:block;position:relative}article pre b.name{position:absolute;line-height:1;top:10px;right:10px;font-size:60px;color:#eee;pointer-events:none}article img{padding:0;display:block;border:1px solid #ccc;margin:10px 0 5px;max-width:100% }article table{border:0;border-collapse:collapse;border-spacing:0}article table th,article table td{border:0}article table th{border-bottom:2px solid #848484;text-align:left;padding:6px 20px}article table td{border-bottom:1px solid #d0d0d0;padding:6px 20px}article .expire-tips{padding:5px 10px;font-size:15px;border:1px solid #e2e2e2;background-color:#ffffc0;border-left:5px solid #fff000;color:#333}article .aliyun-tips{padding:5px 10px;font-size:15px;border:1px solid #e2e2e2;background-color:#f0f8f4;border-left:5px solid #7cc4a0}article .post-info{font-size:14px}article .entry-content{font-size:16px;line-height:1.8;word-wrap:break-word}article .entry-content .date{color:#999;font-size:14px;font-style:italic}article .entry-content p,article .entry-content blockquote,article .entry-content ul,article .entry-content ol,article .entry-content dl,article .entry-content table,article .entry-content iframe,article .entry-content h1,article .entry-content h2,article .entry-content h3,article .entry-content h4,article .entry-content h5,article .entry-content h6,article .entry-content pre{margin-top:15px}article .entry-content ul ul,article .entry-content ul ol,article .entry-content ul dl,article .entry-content ol ul,article .entry-content ol ol,article .entry-content ol dl,article .entry-content dl ul,article .entry-content dl ol,article .entry-content dl dl,article .entry-content blockquote > p:first-of-type{margin-top:0}article .entry-content ul,article .entry-content ol,article .entry-content dl{margin-left:25px}article.tags section a{display:inline-block;font-size:14px;padding:0 15px;height:40px;line-height:40px;color:rgba(36,121,204,.8);border:1px solid rgba(36,121,204,.8);border-radius:4px;margin:0 15px 10px 0;text-decoration:none;-webkit-transition:color .2s cubic-bezier(.4,.01,.165,.99),border .2s cubic-bezier(.4,.01,.165,.99);transition:color .2s cubic-bezier(.4,.01,.165,.99),border .2s cubic-bezier(.4,.01,.165,.99)}article.tags section a:hover{color:#2479CC;border-color:#2479CC}a.anchor{display:block;position:relative;visibility:hidden}#search .wrapper{margin-right:72px}#search form{position:relative}#search .wrapper input,#search .submit{-webkit-appearance:none;font-size:16px;height:40px;outline:0}#search .wrapper input{border:1px solid #bbb;border-radius:0;box-sizing:border-box;display:block;padding:4px 6px;width:100% }#search .submit{background-color:#e7e7e7;border:1px solid #bbb;border-left:0;border-radius:0;color:#222;display:block;position:absolute;right:0;top:0;width:72px}#searchResult{min-height:350px;overflow-x:hidden}#searchResult .info{color:#676767;font-size:13px;padding:15px 0;border-bottom:1px solid #e9e9e9}#searchResult .no-result{padding:5px;margin:15px 0;border:1px solid #fc3;background-color:#fff4c2;font-size:13px}#searchResult .loading,#searchResult .hot-words{margin-top:20px}#searchResult .hot-words a{margin-right:20px}#searchResult .item{padding:.5em 0 .3em}#searchResult .item .title a{font-size:16px;text-decoration:underline}#searchResult .item .title .type{display:inline-block;background-color:#eee;color:#888;margin-right:8px;padding:0 5px;font-size:13px;border-radius:3px}#searchResult .item .desc{font-size:14px;line-height:1.6}#searchResult .item .tags{font-size:14px;line-height:1.8}#searchResult .item .tags a{margin-right:12px;color:#666}#searchResult .item .title b,#searchResult .item .desc b{color:#C00;font-weight:400}#footer{line-height:1.8;text-align:center;padding:15px;border-top:1px solid #fff;font-size:.9em}#footer .beian{color:#666}#comments{border-top:1px solid #fff;border-bottom:1px solid #ddd;padding:30px 0;min-height:350px}#comments h1.title{font-size:25px;font-weight:300;line-height:35px;margin-bottom:20px}@media screen and (max-width:768px){ #header{-webkit-transform:translate3D(0,0,0);-ms-transform:translate3D(0,0,0);transform:translate3D(0,0,0);-webkit-transition:all .2s cubic-bezier(.4,.01,.165,.99);transition:all .2s cubic-bezier(.4,.01,.165,.99);display:block}a.anchor{top:-50px} }@media screen and (max-width:768px){ #sidebar{-webkit-transition:-webkit-transform .2s cubic-bezier(.4,.01,.165,.99);transition:transform .2s cubic-bezier(.4,.01,.165,.99),-webkit-transform .2s cubic-bezier(.4,.01,.165,.99)}#sidebar.behavior_1{-webkit-transform:translate3D(-250px,0,0);-ms-transform:translate3D(-250px,0,0);transform:translate3D(-250px,0,0)}#sidebar.behavior_2{-webkit-transform:translate3D(0,0,0);-ms-transform:translate3D(0,0,0);transform:translate3D(0,0,0)}#sidebar .profile{padding-top:20px;padding-bottom:20px}#sidebar .profile a,#sidebar .profile img{width:100px;height:100px;border-radius:100px}#sidebar .profile span{display:none} }@media screen and (min-width:769px) and (max-width:1024px){ #sidebar{width:75px}#sidebar .profile{padding-top:20px}#sidebar .profile a,#sidebar .profile img{width:40px;height:40px;border-radius:40px}#sidebar .profile span{display:none}#sidebar .buttons li a{padding:0}#sidebar .buttons li a i{font-size:18px;display:block;margin:0 auto}#sidebar .buttons li a span{display:none}#sidebar .buttons li a.inline{width:100% } }@media screen and (min-width:768px) and (max-width:1024px){ #main{padding-left:115px} }@media screen and (max-width:769px){ #main{width:100%;min-height:100%;padding-top:50px;padding-left:10px;padding-right:10px} }@media screen and (max-width:769px){article{background-color:#fff;padding:10px}article h1{font-size:22px;padding:5px 0 10px;margin:0}article .meta{display:none}article .desc{color:#999;font-size:14px}article p.more{font-size:14px;margin:5px 0} }</style><script>LS.html2ls("stc_css_firekylin","stc_css_firekylin");LS.updateVersion("stc_ls", "R", "R");</script>  <style>article img {
+    border: none;
+    max-width: 100%;
+}
+
+@media (min-width:640px) { 
+  article img{
+    max-width: 640px;
+  }
+}
+
+@media (max-width:500px) {
+  .entry-content iframe {
+    display: none;
+  }
+}
+
+#sidebar{
+    background-color: #202020!important;
+}
+</style>  
+<script type="text/javascript">
+  var _vds = _vds || [];
+  window._vds = _vds;
+  (function(){
+    _vds.push(['setAccountId', '98b04d9454678df8']);
+    (function() {
+      var vds = document.createElement('script');
+      vds.type='text/javascript';
+      vds.async = true;
+      vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(vds, s);
+    })();
+  })();
+</script> 
+<style type="text/css">#Ad_windows, #Layeraa2, #MsnDialog.ad, #MyMoveAd, #QQ_Full, #ZAML, #aafoot.top_box, #aafoot[class^="top_box"], #aatop.top_box, #aatop[class^="top_box"], #ad-SNSSplashAd, #ad08, #ad6cn, #adBody07, #adLeftFloat, #adRightFloat, #ad_box1, #ad_box2, #ad_full, #ad_globle_div, #ad_headerbanner, #adrights14, #ads_c_tpc, #ads_in_video, #ads_top_video, #adtop1, #adv-2, #adv-3, #adx_cggp, #body > #left-promotion, #body > #right-promotion, #bottomAD, #bottombanner, #comiis_xizi_gg02, #crazy_ad_float, #crazy_ad_layer, #cs_left_couplet, #cs_right_couplet, #dbgg, #doyoo_mon_mask, #doyoo_monitor, #duilian_left, #duilian_right, #eis_pad1, #eis_pad2, #everydayadv_mask, #floatAd, #floatad-winpop, #footer_fix_ggw, #frameS8CyqB { display: none!important; z-index:-1!important; height:0px!important;}
+#fwin_popad_7ree, #fwin_popad_7ree + #fwin_dialog, #gg300, #googleAD1, #googleAD2, #googleAdIndexTop, #haoetv1, #haoxinqing_me_img, #js-ad-map, #js_ads_banner_top, #js_ads_banner_top_slide, #kfpopupDiv, #ks > .DaKuang, #ldgindexbuttom, #leftCouple, #leftCouplet, #leftFloat + #rightFloat, #leftFloat[style="z-index: 999; position: fixed; left: 0px; bottom: 0px;"], #left_couple, #left_couplet.close_discor, #left_down_float_ad, #left_float + #right_float, #left_float.close_discor, #left_up_float_ad, #lovexin1, #lovexin11, #lovexin12, #lovexin121, #lovexin13, #lovexin14, #lovexin2, #lt-ad-radio, #menu + #topBox, #menu + script + #topBox, #miaov_float_layer, #micast_ads, #modalgg, #movieInfoRight, #mv_ad_dom, #mv_float_layer, #my-adsFPR, #nav + .slider-spons, #navcontainer + .moneyarea, #netease_mail_footer, #new_pop_ad, #olfullad, #overture_ads_bottom_td, #overture_ads_top_td, #photo--content-title-bottomx--foot, #photo-header-title-content-text-dallor { display: none!important; z-index:-1!important; height:0px!important;}
+#piao_div_0[style*="width:140px;"], #piao_div_1[style*="width:140px;"], #piao_div_2[style*="width:140px;"], #piao_div_3[style*="width:140px;"], #piao_div_4[style*="width:140px;"], #piao_div_5[style*="width:140px;"], #player_banner[style*="fixed;"], #popup.t, #ptcmsad1, #qj960a, #qj960b, #results.content-main > .eLeft, #rightCouple, #rightCouple + #leftFloat, #rightCouplet, #rightCouplet + #leftFloat, #right_couple, #right_couple + #left_float, #right_couplet.close_discor, #right_down_float_ad, #right_up_float_ad, #search > a[href="/top1.html"], #sitefocus.focus, #snActive-wrap, #table1[width="468"][height="50"], #table1[width="794"][height="60"], #table1[width="812"][height="50"], #table1[width="812"][height="60"], #tanx-con-1, #tanx-fold-main, #textggs, #top-gg-container, #top_ads0, #top_box > a[onclick^="javascript"], #toperAd2, #tr_ad1, #tr_ad10, #tr_ad11, #tr_ad2, #tr_ad3, #tr_ad4, #tr_ad5, #tr_ad6, #tr_ad7, #tr_ad8, #tr_ad9, #tripadvisor-ad, #wp > .V-videoFloat, #wrapper > .topad, #xianliaome_ads { display: none!important; z-index:-1!important; height:0px!important;}
+#xinnxi, ._cggp, ._ggs, ._popIn_recommend_article_ad, ._popIn_recommend_article_ad_reserved, .a_fl, .a_pb, .a_sxc, .a_xsfl, .aasd-text, .ad-above-footer, .ad-below-adjacent-post, .ad-below-header-menu, .ad-below-post-title, .ad-below-related-post, .ad-couplet-common, .ad-left-down, .ad-left-top, .ad-right-down, .ad-right-top, .ad-shine-panel, .ad-site, .ad250left, .ad250right, .ad300left, .ad336left, .ad990x130, .ad990x90, .ad_couplebanner, .ad_fixed, .ad_footerbanner, .ad_headerbanner, .ad_hf, .ad_home_current, .ad_right_1, .ad_right_2, .ad_thread, .ad_top_close + .bd, .ads > a > img[src*=".sinaimg."], .ads_desktop, .ads_mobile, .adsense160, .adsense200, .adsoho, .afc_popup, .anniversary-wrap-2018, .artad, .assort-ad, .baiduad, .banner-ad-section { display: none!important; z-index:-1!important; height:0px!important;}
+.bdyp-sygg-ul, .below_ads, .bm.a_c, .bn728-100, .bn728-93, .bottomSponsor, .broadcastMe[style="width: 1200px;"], .bus_adsbox, .buyaoa-below, .cari-ads, .chat-ad, .chat-right-ad, .chat-sysbroadcast-ad, .chat-top-ad, .comiis_ad, .comiis_adbox, .comiis_guanggao, .comiis_guanggao_tit, .common-topad, .common_ad, .con_search + #carousel-example-generic[style^="max-width: 1170px;"], .content > a > .topline, .content-video > .ads, .content-video > .ads-player, .content_ad_300, .corner-gg, .couplet_9cb0d, .ctm_ad, .customSlideshow-ad-below, .d_banner_inner, .edtj, .eis_muad, .error > #qqs, .event_fullscreen_gg_modal, .f-sign-cont[data-dysign-adid], .float-adv-left-bottom, .float-adv-left-top, .float-adv-right-bottom, .float-adv-right-top, .floatAd, .float_bot_right, .frAd, .full-ads, .full.banners12, .getads, .gg1000, .gg430, .gg_300, .gg_728, .gg_950 { display: none!important; z-index:-1!important; height:0px!important;}
+.gg_960, .gg_full, .ggad, .gggpost-above, .ggpost-below, .ggtop, .ggw, .global_video_bottom_dbtc, .google-ad2_fixed, .google_adsense2, .gpost-below, .gpt_ads_box, .guangjiaodebupachuanxiede, .guruin-ads, .hao123-unionad-pic, .heg > .div-list, .his-sign-cont[data-dysign-adid], .hlol_ad, .hongbao_hd, .iHead960x90, .index_alert_gg, .indexad2, .indexad3, .indexad4, .jq_mediav_ad_report, .kf_qycn_com_cckf_welcomebox, .leftadv, .listok > a > img[src*=".alicdn.com"][width="980"][height="80"], .listok > a > img[style^="width:980px;height:"], .loc-home-top-adv-new, .lol-ad, .lol_ad, .lyzm-prevent, .main-ad-l, .main-ad-r, .main-ad-r + .topad, .main[style="border:#7D8C8E solid 1px;height: 23px;"], .maomi-content > .section-banner, .mediav-newsfeed-listitem-type-1, .mediavAd_report, .mediavfeed-newsitem, .menutab_ad, .ml_ad1, .ml_ad3, .ml_ad5, .mlad, .mod + #bottomBox, .mylist > a[target="_bank"] > img[src*=".alicdn.com/"], .pagead_3, .pcgg { display: none!important; z-index:-1!important; height:0px!important;}
+.player + .sponsor, .player-bottom-gg, .privilege-promote, .qzhfaaa, .readmidad, .right > .content > .ads, .room-ad-bottom, .room-ad-top, .room-ad-video-down, .scupioadslot, .spon-img[src*=".alicdn."], .subject_link[href$="/thread-index-fid-1-tid-12848.htm"], .sxAdBox, .table_ad, .theme_custom_slidebox-ad-below, .tipadds, .tmall_ad_container, .tooltip > #tp, .top-read-ad, .topSponsor, .top_box > #foot, .top_box > #indextop, .top_box > #news, .top_box > li > a[href^="/js/app.htm?"], .top_func_ad, .toy52_outer, .toy52apparel_ALL, .twavt-ads, .wemziguanggao, .wf_ad_block, .widget-qianhuiji, .widget_ad_sidebar, .widget_adbox, .wp > .ad-box, .wp.a_f, .wp.a_h, .wumii-bottom-popup, .wumii-widget-ad, .wzad, .xzbox-gh, .yd_ad, .yd_ad1, .yd_ad2, .yd_ad3, .yd_ad5, .yd_ad6, .zhedangceng_ggg, .zhedangceng_ggg + .jingqun_tu, .zone_wap_banner2, A[href*=".com/?Agent="] { display: none!important; z-index:-1!important; height:0px!important;}
+A[href^="/e/public/ClickAd?adid="], a#wrapper_left_bg[target="_blank"], a#wrapper_right_bg[target="_blank"], a[href*=".05cg.com/"], a[href*=".08an.com/"], a[href*=".123ch.cn"], a[href*=".17yyba.com/"], a[href*=".222bz.com/"], a[href*=".41gw.com/"], a[href*=".7wkw.com"], a[href*=".9xiazaiqi.com"], a[href*=".acuxrecv.cn"], a[href*=".ahhxwavi.cn"], a[href*=".biwbmsyt.cn"], a[href*=".cangpie.com/"], a[href*=".com/?Extend="], a[href*=".com/?p="][target="_blank"] > img[src$=".gif"], a[href*=".com/Register.aspx?aid="], a[href*=".com/Register/?a="], a[href*=".com?aff="], a[href*=".com?intr="], a[href*=".downok.com"], a[href*=".dpcpfw.com/"], a[href*=".gongnou.com/"], a[href*=".gsxzq.com/"], a[href*=".guzaosf.com/"], a[href*=".hbjimin.com/"], a[href*=".iziyo.com/"], a[href*=".mieseng.com/"], a[href*=".qpzqxz.com/"], a[href*=".qtj5.com/"], a[href*=".tduou.com/"], a[href*=".ttz5.cn"], a[href*=".tudown.com/"], a[href*=".wenpie.com/"], a[href*=".wjLkj.com/"], a[href*=".yyk2.com/"], a[href*="/?INTR="], a[href*="/?Intr="], a[href*="/?intr="], a[href*="/Register?a="], a[href="http://t.cn/E2PgiG1"], a[href="http://t.cn/Ex0cCbt"], a[href="http://www.tw787.com/"], a[href="http://www.yabovip5.cc/"], a[href^="http://172.247.157.176/"], a[href^="http://ad.moemoe."], a[href^="http://go.gotourl.xyz/"], a[href^="http://pic.gunqiu.com/"], a[href^="https://hi.potvpn.com/?from="] { display: none!important; z-index:-1!important; height:0px!important;}
+a[onclick^="javascript:pc_"] > img[src*=".alicdn.com"], a[style="display:inline-block;font-weight:bold;color:#f00;border:1px solid #f00;border-radius:15px;padding:2px 5px 2px 5px;margin:5px 5px 5px 0px;"], body[class|="view"] > .ad-box, body[onload*="u()"] > #x, center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"], center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:60px;"], div#ad_id, div#xinxi, div[id^="ad_thread"], img[data-link][data-src*="/u/"]:not([data-link*="/i/"]), img[src*=".qpic.cn"][width="980"][height="80"], img[src*=".sinaimg."][style="width:1025px;height:80px"], img[src*=".sinaimg."][style="width:150px;height:300px"], script + #coupletBox, script + #rbbox, span[title="neteasefooter"], table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"], [class^="ADTOPLB"], [style="display:none"] + iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div:not([id]):not([class]):not([style]) > div:not([id]):not([class]):not([style]) > iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]:not([src^="http://www.facebook.com/"]), div[style^="width: 100%;"][style$="display: block;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="margin: 0px;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="opacity: 100;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="overflow: hidden;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="visibility: visible;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"][style$="z-index: inherit;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], #bd-hl-content, #container > #pic_container, #container > .item.title_normal, #container > .item.title_top, #container > .wrapper > .fl, #container > a.block, #container.container > a.item, #cpro_container, #img-txt-wrapper > #title_desc_div, #wrapper > div[style="padding:3px;"] > #pic, .container > a.mid-wrapper, a[href*="/mobads.php?"], div[id][style="width: 100%;"] > div > div > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[id][style="width: 100%;"] > div > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[id][style="width: 100%;"] > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"], div[style^="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]:not([allowfullscreen]), .footer > #box[style="width:100%;height:100%;position:fixed;top:0"], a[href*=".gotourls.bid"], a[href^="http://yunbofangbt."], #downdiv > .downcode, .readerListADbox, a[href^="https://uds24.com/"], #j-new-ad { display: none!important; z-index:-1!important; height:0px!important;}
+.a_sxfl, .a_sxmu, .a_sxp, .a_sxpb, .heg > .partner-list, a[href^="/dasp.php?a="], #toptb + div[align="center"], .it618_firstad_flex, table[style="border:#e8e8e8 1px solid;"] + div[style="margin-top:5px"] > table[style="width:100%;"][cellspacing="0"][cellpadding="1"][bordercolor="#22222"][border="1"] { display: none!important; z-index:-1!important; height:0px!important;}
+</style><style type="text/css">.adsbygoogle, .a_p, .a_fr, .a_cn, div[id^="_"] > iframe[scrolling="no"][src^="http"][width][height][frameborder="0"], a[href*="/cpro/"], a[href*="/cpro."], div[class^="ADTOPLB_"], a[href^="http://www.upupoo.com"], a[href*=".umeng.com"]:not([href="http://www.umeng.com/"]) > img, a > img[width="980"][src*=".sinaimg."], a > img[width="960"][src*=".sinaimg."], a > img[width="960"][src*=".alicdn.com/"], a > img[src*=".sinaimg."][src$=".gif"][style*="width:960"], .wp.a_t, .widget_ui_ads, .ggbox, .container > .ads, .con_ad, .a_pt, .a_pr, .a_mu, #kfivtwin, #haoetv, #gg1 { display: none!important; z-index:-1!important; height:0px!important;}
+</style></head> <body class=""> <nav id="sidebar" class="behavior_1"> <div class="wrap"> <div class="profile"> <a href="https://www.h5jun.com/"> <img src="./十年踪迹的博客_files/logo.jpg" alt="十年踪迹的博客"> </a> <span>十年踪迹的博客</span> </div> <ul class="buttons">  <li> <a class="" href="https://www.h5jun.com/" title="首页"> <i class="iconfont icon-home"></i> <span>首页</span> </a> </li>  <li> <a class="" href="https://www.h5jun.com/archives/" title="归档"> <i class="iconfont icon-archive"></i> <span>归档</span> </a> </li>  <li> <a class="" href="https://www.h5jun.com/tags/" title="标签"> <i class="iconfont icon-tags"></i> <span>标签</span> </a> </li>  <li> <a class="" href="https://www.h5jun.com/about/" title="关于"> <i class="iconfont icon-user"></i> <span>关于</span> </a> </li>  <li> <a class="" href="https://www.h5jun.com/links/" title="友链"> <i class="iconfont icon-link"></i> <span>友链</span> </a> </li>  <li> <a class="" href="https://ppt.baomitu.com/usercenter?user_name=%E5%8D%81%E5%B9%B4%E8%B8%AA%E8%BF%B9" title="分享"> <i class="iconfont icon-twitter-v"></i> <span>分享</span> </a> </li>  <li> <a class="" href="https://t.75team.com/video" title="视频"> <i class="iconfont icon-stackoverflow"></i> <span>视频</span> </a> </li>  </ul> <ul class="buttons"> <li>  <a class="inline" rel="nofollow" target="_blank" href="https://github.com/akira-cn"> <i class="iconfont icon-github-v" title="GitHub"></i> </a>   <a class="inline" href="https://www.h5jun.com/rss.html"> <i class="iconfont icon-rss-v" title="RSS"></i> </a> <a class="inline" href="https://www.h5jun.com/search.html"> <i class="iconfont icon-search" title="Search"></i> </a> </li> </ul> </div> </nav> <div id="header"> <div class="btn-bar"><i></i></div> <h1><a href="https://www.h5jun.com/">十年踪迹的博客</a></h1> <a class="me" href="https://www.h5jun.com/about/"><img src="./十年踪迹的博客_files/logo.jpg" alt="十年踪迹的博客"></a> </div> <div id="sidebar-mask" style="display: none;"></div> <div id="main"> 
+<section id="page-index">
+
+  
+
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">06月18, 2018</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/spritejs.html#comments">0 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/spritejs.html">SpriteJS —— Canvas动画从未如此简单</a>
+    </h1>
+
+    <div class="entry-content">
+      ...
+      <p class="more">
+          <a href="https://www.h5jun.com/post/spritejs.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">05月20, 2018</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/thinkjs-vue2.0-build.html#comments">0 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/thinkjs-vue2.0-build.html">简单构建 ThinkJS + Vue2.0 前后端分离的多页应用</a>
+    </h1>
+
+    <div class="entry-content">
+      ...
+      <p class="more">
+          <a href="https://www.h5jun.com/post/thinkjs-vue2.0-build.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">08月22, 2017</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/timeline-for-animations.html#comments">0 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/timeline-for-animations.html">设计 Timeline 时间轴来更精确地控制动画</a>
+    </h1>
+
+    <div class="entry-content">
+      <p>Firefox 偷偷实现了一个 <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnimationTimeline">AnimationTimeline</a>，用来为动画提供时间轴。根据文档，它是一个抽象类，被 <a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentTimeline">DocumentTimeline</a> 继承。</p>
+<p>由于是非标准的特性，MDN的文档里面也没有解释的很清楚，只是说它用来让多个动画共享时间轴，但是具体该怎么用，并没有详细的说明。</p>
+<p>今天在这篇文章里，我并不想解释 Firefox 实现的这个 Timeline 该怎么用，而是借着这个 Timeline 的概念进行一些扩展，实现了一个全新的 <a href="https://github.com/spritejs/sprite-timeline">Timeline 库</a>。让我们看看如果为动画或者其他依赖于时间的行为设计一个 Timeline，我们能做什么。</p>
+
+      <p class="more">
+          <a href="https://www.h5jun.com/post/timeline-for-animations.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">08月05, 2017</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/signals-and-async.html#comments">0 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/signals-and-async.html">用信号来控制异步流程</a>
+    </h1>
+
+    <div class="entry-content">
+      <p>我们知道，JavaScript 不管是操作 DOM，还是执行服务端任务，不可避免需要处理许多异步调用。在早期，许多开发者仅仅通过 JavaScript 的回调方式来处理异步，但是那样很容易造成异步回调的嵌套，产生 “Callback Hell”。</p>
+<p><img src="./十年踪迹的博客_files/t012ba4a8fb02337f2f.jpg" alt=""> </p>
+
+      <p class="more">
+          <a href="https://www.h5jun.com/post/signals-and-async.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">06月26, 2017</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/js-functional-1.html#comments">10 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/js-functional-1.html">漫谈 JS 函数式编程（一）</a>
+    </h1>
+
+    <div class="entry-content">
+      <blockquote>
+<p>这可能是最简单易懂的函数式编程介（扯）绍（淡）了</p>
+</blockquote>
+<p><img src="./十年踪迹的博客_files/t01be0fea9eac30db67.png" alt=""></p>
+<p>目前前端界（以及其他一些领域）对函数式编程大体上两种态度，一些人是觉得函数式编程特牛逼，尤其是现在许多新生的框架和库都在标榜自己的函数式特征。而另一些人，又觉得函数式编程学起来很难，而且似乎也没有什么卵用，理由是在自己经历的项目里面很难看到具体的函数式编程应用场景，甚至其中许多人认同一个观点，觉得函数式编程只适合于学术研究，很难在工程项目中实际使用。</p>
+
+      <p class="more">
+          <a href="https://www.h5jun.com/post/js-functional-1.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">06月15, 2017</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/three-black-tech-in-modern-js.html#comments">5 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/three-black-tech-in-modern-js.html">JavaScript 最新特性实现的三大黑科技</a>
+    </h1>
+
+    <div class="entry-content">
+      <h2 id="-">依次执行多项异步任务</h2>
+<p>有时候，我们希望批量执行一组异步任务，但是不是<strong>并行</strong>，而是依次执行，这组任务是动态的，在一个数组里，当然我们可以用 for 循环然后一个一个 await 执行，但是还有另外一种方式：</p>
+
+      <p class="more">
+          <a href="https://www.h5jun.com/post/three-black-tech-in-modern-js.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">05月12, 2017</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/segment-with-nodejs.html#comments">2 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/segment-with-nodejs.html">使用 Node.js 对文本内容分词和关键词抽取</a>
+    </h1>
+
+    <div class="entry-content">
+      <p>在讨论技术前先卖个萌，吃货的世界你不懂~~</p>
+<p><img src="./十年踪迹的博客_files/t01ee4cb9bf6b602f75.png" alt=""></p>
+
+      <p class="more">
+          <a href="https://www.h5jun.com/post/segment-with-nodejs.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">04月19, 2017</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/handlock-comp.html#comments">13 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/handlock-comp.html">如何用原生 JS 实现手势解锁组件</a>
+    </h1>
+
+    <div class="entry-content">
+      <p>这是<a href="https://html5.360.cn/star">第三届 360 前端星计划</a>的选拔<a href="https://www.h5jun.com/post/75team-star-handlock.html">作业题</a>。600多名学生参与了解答，最后通过了60人。这60名同学完成的不错，思路、代码风格、功能完成度颇有可取之处，不过也有一些欠考虑的地方，比如发现很多同学能按照需求实现完整的功能，但是不知道应当如何<strong>设计开放的 API</strong>，或者说，如何分析和预判产品需求和未来的变化，从而决定什么应当开放，什么应当封装。这无关于答案正确与否，还是和经验有关。</p>
+<p>在这里，我提供一个<a href="https://github.com/akira-cn/handlock">参考的版本</a>，并不是说这一版就最好，而是说，通过这一版，分析当我们遇到这样的比较复杂的 UI 需求的时候，我们应该怎样思考和实现。</p>
+
+      <p class="more">
+          <a href="https://www.h5jun.com/post/handlock-comp.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">04月18, 2017</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/babel-plugin-private.html#comments">5 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/babel-plugin-private.html">使用 babel 插件来打造真正的“私有”属性</a>
+    </h1>
+
+    <div class="entry-content">
+      <p>大家都知道 JavaScript 的对象属性默认是可以被从外部访问和修改的，也就是说，JavaScript 本身不存在完全“私有”的对象属性。例如：</p>
+<pre><code class="hljs lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{
+    <span class="hljs-keyword">constructor</span>(x, y){
+        <span class="hljs-keyword">this</span>._x = x;
+        <span class="hljs-keyword">this</span>._y = y;
+    }
+    get length(){
+        <span class="hljs-keyword">const</span> {_x, _y} = <span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.sqrt(_x * _x + _y * _y);
+    }
+}
+
+<span class="hljs-keyword">let</span> p = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+<span class="hljs-built_in">console</span>.log(p._x, p._y, p.length); <span class="hljs-comment">//3, 4, 5</span>
+</code></pre>
+<p>在上面的代码里，我们<strong>约定俗成</strong>地用下划线开头来表示私有变量。我们希望 _x、_y 不被外部访问，然而，这只是我们一厢情愿，使用者还是可以访问到这两个变量。</p>
+<p>在这里，我们不讨论 ES 的 <a href="https://github.com/tc39/proposal-private-fields">private 标准提案</a>，而是讨论如何使用工具来将约定变成真正的私有。</p>
+
+      <p class="more">
+          <a href="https://www.h5jun.com/post/babel-plugin-private.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <article class="post">
+    <div class="meta">
+      <div>
+        
+          <span class="author">
+            
+            admin
+          </span>
+          <span>发布于</span>
+        
+        <span class="date">04月06, 2017</span>
+      </div>
+      <div class="comment">
+          <a href="https://www.h5jun.com/post/75team-star-handlock.html#comments">3 comments</a>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <a href="https://www.h5jun.com/post/75team-star-handlock.html">第三届360前端星计划在线作业题</a>
+    </h1>
+
+    <div class="entry-content">
+      <h1 id="2017-">2017 前端星计划选拔作业</h1>
+<p>在移动端设备上，“手势密码”成为一个很常用的 UI 组件。</p>
+<p>一个手势密码的界面大致如下：</p>
+<p><img src="./十年踪迹的博客_files/t01d73f4b567014b497.png" alt=""></p>
+
+      <p class="more">
+          <a href="https://www.h5jun.com/post/75team-star-handlock.html">阅读全文 »</a>
+      </p>
+    </div>
+
+  </article>
+  
+  <nav class="pagination">
+  
+
+  
+    
+    <a href="https://www.h5jun.com/?page=2" class="next">下一页 »</a>
+  
+
+  <div class="center"><a href="https://www.h5jun.com/archives.html">博客归档</a></div>
+</nav>
+
+</section>
+ <footer id="footer" class="inner"> © 2020&nbsp;-&nbsp; 十年踪迹的博客  &nbsp;-&nbsp;<a target="_blank" rel="nofollow" class="external beian" href="http://www.miitbeian.gov.cn/">京ICP备15048708号-5</a>  <br> Powered by&nbsp;<a target="_blank" href="https://thinkjs.org/">ThinkJS</a>&nbsp;&amp;&nbsp;<a target="_blank" rel="nofollow" class="external" href="https://firekylin.org/">FireKylin 0.15.15</a> </footer> </div><script id="stc_js_firekylin">(function(win, doc){
+  var getById = function(el){
+    return document.getElementById(el);
+  };
+
+  //from qwrap
+  var getDocRect = function(doc) {
+    doc = doc || document;
+    var win = doc.defaultView || doc.parentWindow,
+      mode = doc.compatMode,
+      root = doc.documentElement,
+      h = win.innerHeight || 0,
+      w = win.innerWidth || 0,
+      scrollX = win.pageXOffset || 0,
+      scrollY = win.pageYOffset || 0,
+      scrollW = root.scrollWidth,
+      scrollH = root.scrollHeight;
+    if (mode != 'CSS1Compat') { // Quirks
+      root = doc.body;
+      scrollW = root.scrollWidth;
+      scrollH = root.scrollHeight;
+    }
+    if (mode) { // IE, Gecko
+      w = root.clientWidth;
+      h = root.clientHeight;
+    }
+    scrollW = Math.max(scrollW, w);
+    scrollH = Math.max(scrollH, h);
+    scrollX = Math.max(scrollX, doc.documentElement.scrollLeft, doc.body.scrollLeft);
+    scrollY = Math.max(scrollY, doc.documentElement.scrollTop, doc.body.scrollTop);
+    return {
+      width: w,
+      height: h,
+      scrollWidth: scrollW,
+      scrollHeight: scrollH,
+      scrollX: scrollX,
+      scrollY: scrollY
+    };
+  };
+
+  var getXY = function(node) {
+    var doc = node.ownerDocument,
+      docRect = getDocRect(doc),
+      scrollLeft = docRect.scrollX,
+      scrollTop = docRect.scrollY,
+      box = node.getBoundingClientRect(),
+      xy = [box.left, box.top],
+      mode,
+      off1,
+      off2;
+    if (scrollTop || scrollLeft) {
+      xy[0] += scrollLeft;
+      xy[1] += scrollTop;
+    }
+    return xy;
+  };
+
+  var getRect = function(el){
+    var p = getXY(el);
+    var x = p[0];
+    var y = p[1];
+    var w = el.offsetWidth;
+    var h = el.offsetHeight;
+    return {
+      'width': w,
+      'height': h,
+      'left': x,
+      'top': y,
+      'bottom': y + h,
+      'right': x + w
+    };
+  };
+
+  /**
+   * load comment
+   * @return {[type]} [description]
+   */
+  var loadComment = function(){
+    var comments = getById('comments');
+    if(!comments){
+      return;
+    }
+    var load = function(){
+      var dataType = comments.getAttribute('data-type');
+      if(dataType === 'disqus'){
+        loadDisqusComment();
+      }else if(dataType === 'duoshuo'){
+        loadDuoshuoComment();
+      }else if(dataType === 'changyan'){
+        loadChangyanComment();
+      }else if(dataType === 'netease') {
+        loadNeteaseComment();
+      }
+    }
+
+    if(location.hash.indexOf('#comments') > -1){
+      load();
+    }else {
+      var timer = setInterval(function(){
+        var docRect = getDocRect();
+        var currentTop = docRect.scrollY + docRect.height;
+        var elTop = getRect(comments).top;
+        if(Math.abs(elTop - currentTop) < 1000){
+          load();
+          clearInterval(timer);
+        }
+      }, 300)
+    }
+  };
+  /**
+   * load disqus comment
+   * @return {[type]} [description]
+   */
+  var loadDisqusComment = function(){
+    var disqus_thread = getById('disqus_thread');
+    if(!disqus_thread){
+      return;
+    }
+    window.disqus_config = function(){
+      this.page.url = disqus_thread.getAttribute('data-url');
+      this.page.identifier = disqus_thread.getAttribute('data-identifier');
+    }
+    var s = doc.createElement('script');
+    s.src = '//' + disqus_thread.getAttribute('data-name') + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (doc.head || doc.body).appendChild(s);
+  };
+
+  var loadDuoshuoComment = function(){
+    var disqus_thread = getById('ds_thread');
+    if(!disqus_thread){
+      return;
+    }
+    window.duoshuoQuery = {short_name: disqus_thread.getAttribute('data-name')};
+    var s = document.createElement('script');
+    s.src = '//static.duoshuo.com/embed.js';
+    (doc.head || doc.body).appendChild(s);
+  };
+
+  var loadChangyanComment = function(){
+    var disqus_thread = getById('SOHUCS');
+    if( !disqus_thread ) { return; }
+    var appid = disqus_thread.getAttribute('data-name'); 
+    var conf = disqus_thread.getAttribute('sid');
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    var s = document.createElement('script');
+    if (width < 960) { 
+      s.id = 'changyan_mobile_js';
+      s.src = '//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf;
+    } else {
+      s.src = '//changyan.sohu.com/upload/changyan.js';
+      s.onload = function() {
+        window.changyan.api.config({appid:appid,conf:conf});
+      }
+    }
+    (doc.head||doc.body).appendChild(s);
+  }
+
+  var loadNeteaseComment = function() {
+    var disqus_thread = getById('cloud-tie-wrapper');
+    if(!disqus_thread){
+      return;
+    }
+    window.cloudTieConfig = {
+      url: getById('comments').getAttribute('data-url'), 
+      sourceId: "",
+      productKey: disqus_thread.getAttribute('data-name'),
+      target: disqus_thread.className
+    };
+    var s = document.createElement('script');
+    s.src = 'https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js';
+    (doc.head || doc.body).appendChild(s);
+  }
+  window.addEventListener('load', function(){
+    loadComment();
+  });
+
+
+
+
+
+  var utils = {
+    isMob : (function(){
+      var ua = navigator.userAgent.toLowerCase();
+      var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+      var result = false;
+      for( var i = 0 ; i < agents.length; i++ ){
+        if( ua.indexOf( agents[i].toLowerCase() ) > -1){
+          result = true;
+        }
+      }
+      return result;
+    })()
+  }
+
+
+  if( utils.isMob ){
+    document.documentElement.className += ' mob';
+  }else{
+    document.documentElement.className += ' pc';
+  }
+
+
+  var Dom = {
+    $sidebar : document.querySelector('#sidebar'),
+    $main : document.querySelector('#main'),
+    $sidebar_mask : document.querySelector('#sidebar-mask'),
+    $body : document.body,
+    $btn_side : document.querySelector('#header .btn-bar'),
+    $article : document.querySelectorAll('.mob #page-index article')
+  };
+
+  Dom.bindEvent = function(){
+
+    var _this = this,
+      body_class_name = 'side',
+      eventFirst = 'click',
+      eventSecond = 'click';
+
+    if( utils.isMob ){
+      eventFirst = 'touchstart';
+      eventSecond = 'touchend';
+    }
+
+    this.$btn_side.addEventListener( eventSecond ,function(){
+
+      if( _this.$body.className.indexOf( body_class_name ) > -1 ){
+        _this.$body.className = _this.$body.className.replace( body_class_name , '');
+        _this.$sidebar_mask.style.display = 'none';
+      }else{
+        _this.$body.className += (' ' + body_class_name);
+        _this.$sidebar_mask.style.display = 'block';
+      }
+
+    },false);
+
+    this.$sidebar_mask.addEventListener( eventFirst , function( e ){
+      _this.$body.className = _this.$body.className.replace( body_class_name , '');
+      _this.$sidebar_mask.style.display = 'none';
+      e.preventDefault();
+    },false);
+
+
+    window.addEventListener('resize',function(){
+      _this.$body.className = _this.$body.className.replace( body_class_name , '');
+      _this.$sidebar_mask.style.display = 'none';
+    },false);
+  }
+
+  Dom.bindEvent();
+
+})(window, document);
+</script><script>LS.html2ls("stc_js_firekylin","stc_js_firekylin");LS.updateVersion("stc_ls", "z", "z");</script>  <script>
+var _hmt = _hmt || [];
+(function() {
+    var e = document.createElement("script");
+    e.src = "//hm.baidu.com/hm.js?88ba48b4094748ba7d7e28aca58cddcf";
+    var t = document.getElementsByTagName("script")[0];
+    t.parentNode.insertBefore(e, t)
+})();
+</script>  <script>//(function(){function e(e){e=e||document;var t=e.defaultView||e.parentWindow,n=e.compatMode,r=e.documentElement,i=t.innerHeight||0,s=t.innerWidth||0,o=t.pageXOffset||0,u=t.pageYOffset||0,a=r.scrollWidth,f=r.scrollHeight;return n!="CSS1Compat"&&(r=e.body,a=r.scrollWidth,f=r.scrollHeight),n&&(s=r.clientWidth,i=r.clientHeight),a=Math.max(a,s),f=Math.max(f,i),o=Math.max(o,e.documentElement.scrollLeft,e.body.scrollLeft),u=Math.max(u,e.documentElement.scrollTop,e.body.scrollTop),{width:s,height:i,scrollWidth:a,scrollHeight:f,scrollX:o,scrollY:u}}function t(e){var t=n(e),r=t[0],i=t[1],s=e.offsetWidth,o=e.offsetHeight;return{width:s,height:o,left:r,top:i,bottom:i+o,right:r+s}}function n(t){var n=t.ownerDocument,r=e(n),i=r.scrollX,s=r.scrollY,o=t.getBoundingClientRect(),u=[o.left,o.top],a,f,l;if(s||i)u[0]+=i,u[1]+=s;return u}function r(){var e=e||document,t=e.createElement("script");t.src="https://dn-h5jun.qbox.me/duoshuo-h5jun.js",t.setAttribute("data-timestamp",+(new Date)),(e.head||e.body).appendChild(t)}var i=document.getElementById("comments");if(i){i.setAttribute("data-type","user-def"),window.duoshuoQuery={short_name:"h5jun"};var s=setInterval(function(){var n=e(),o=n.scrollY+n.height,u=t(i).top;Math.abs(u-o)<1e3&&(r(),clearInterval(s))},300)}})();
+
+var matched = location.search.match(/isct-token=([^&]+)/)
+var isctToken
+if(matched){
+  isctToken = matched[1]
+  
+  var links = document.querySelectorAll('a')
+  links.forEach(function(link){
+    if(link.search){
+      link.search += '&isct-token=' + isctToken
+    } else {
+      link.search = '?isct-token=' + isctToken
+    }
+  });
+  
+  var scriptEl = document.createElement('script')
+    scriptEl.src = 'https://s1.ssl.qhres.com/!84babcb9/intersection-1.0.0.js'
+    scriptEl.dataset.isctServer = 'wss://isct.h5jun.com'
+    scriptEl.dataset.isctToken = isctToken
+
+  document.body.appendChild(scriptEl)
+}
+</script>   </body></html>
