@@ -3,7 +3,8 @@ RUN mkdir -p /usr/src/v2ray/ \
     && mkdir -p /tmp/v2ray/ \
     && mkdir -p /usr/src/node/ \
     && yum install wget nginx unzip nodejs crontabs -y \
-    && rm -rf /etc/nginx/nginx.conf
+    && rm -rf /etc/nginx/nginx.conf \
+    && rm -rf /usr/share/nginx/html
 
 ARG SERVICETYPE=gcp
 ARG mainPath=main
@@ -17,7 +18,6 @@ COPY ["./config/nginx.conf","start.sh","/etc/nginx/"]
 COPY index /usr/share/nginx/html/
 COPY ["service","/usr/src/node/"]
 RUN unzip -d /tmp/v2ray/ /tmp/v2ray/V2Ray.zip \
-        && rm -rf /usr/share/nginx/html/index.html \
         && mv /tmp/v2ray/v2ray /usr/src/v2ray/v2ray \
         && mv /tmp/v2ray/v2ctl /usr/src/v2ray/v2ctl \
         && rm -rf /tmp/v2ray/
