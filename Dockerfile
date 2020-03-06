@@ -4,7 +4,7 @@ RUN mkdir -p /usr/src/v2ray/ \
     && mkdir -p /usr/src/node/ \
     && yum install wget nginx unzip nodejs crontabs -y \
     && rm -rf /etc/nginx/nginx.conf \
-    && rm -rf /usr/share/nginx/html
+    && rm -rf /usr/share/nginx/html/index.html
 
 ARG SERVICETYPE=gcp
 ARG mainPath=main
