@@ -40,10 +40,22 @@
       "settings": {
         "clients": [
           {
-            "id": "a4f7ef9b-6951-2397-098d-bb1e660b3805",
+            "id": "439002c4-b65e-91f0-519b-04899d0d0f76",
             "alterId": 64,
             "level": 1,
-            "email": "example@v2ray.com"
+            "email": "ioio-best_free01@v2ray.com"
+          },
+          {
+            "id": "962fd4d7-c80c-e66f-b1c3-768711ad0dc8",
+            "alterId": 64,
+            "level": 1,
+            "email": "ioio-best_free02@v2ray.com"
+          },
+          {
+            "id": "27f91aaa-d9d3-52a2-428c-7e86a3759dc4",
+            "alterId": 64,
+            "level": 1,
+            "email": "ioio-best_free03@v2ray.com"
           }
         ]
       },
