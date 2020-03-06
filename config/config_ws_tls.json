@@ -34,7 +34,7 @@
   },
   "inbounds": [
     {
-      "port": 31291,
+      "port": 31290,
       "listen": "127.0.0.1",
       "protocol": "vmess",
       "settings": {
