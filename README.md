@@ -3,7 +3,7 @@
 ## 有问题或者有想要加的功能可以在issus提交或者可以加入下方的电报群
 [点击此链接加入电报群](https://t.me/joinchat/L68JqRQMroH78jqLI1HdcA)
 
-- [安装Docker](#--docker)
+- [安装Docker](#安装Docker)
   * [1.Debian](#1debian)
   * [2.CentOS](#2centos)
 - [自定义部署【脚本】](#自定义部署脚本)
