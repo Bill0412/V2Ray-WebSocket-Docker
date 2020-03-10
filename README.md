@@ -2,7 +2,7 @@
 
 ## 有问题或者有想要加的功能可以在issus提交或者可以加入下方的电报群
 [点击此链接加入电报群](https://t.me/joinchat/L68JqRQMroH78jqLI1HdcA)
-## 下方的 [使用说明](#使用说明) 是必须要看的
+## 部署完成后，下方的 [使用说明](#使用说明) 是必须要看的
 
 - [安装Docker](#安装Docker)
   * [1.Debian](#1debian)
