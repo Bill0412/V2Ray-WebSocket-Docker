@@ -3,6 +3,24 @@
 ## 有问题或者有想要加的功能可以在issus提交或者可以加入下方的电报群
 [点击此链接加入电报群](https://t.me/joinchat/L68JqRQMroH78jqLI1HdcA)
 
+- [安装Docker](#--docker)
+  * [1.Debian](#1debian)
+  * [2.CentOS](#2centos)
+- [自定义部署【脚本】](#自定义部署脚本)
+  * [部署步骤](#部署步骤)
+  * [1.git pull git@github.com:mack-a/V2Ray-WebSocket-Docker.git](#1git-pull-gitgithubcommack-av2ray-websocket-dockergit)
+  * [2.进入项目目录，执行下方命令](#2进入项目目录执行下方命令)
+  * [3.示例](##3示例)
+- [手动部署](#手动部署)
+  * [1.打包](#1打包)
+  * [2.运行](#2运行)
+  * [3.示例](#3示例-1)
+- [托管部署【无法自定义文件】](#托管部署无法自定义文件)
+  * [1.拉取项目](#1拉取项目)
+  * [2.启动](#2启动)
+  * [3.示例](#3示例2)
+- [docker托管地址](#docker托管地址)
+
 # 安装Docker
 ## 1.Debian
 - 1.更新包列表
