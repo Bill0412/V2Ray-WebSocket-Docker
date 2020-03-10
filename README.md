@@ -2,6 +2,7 @@
 
 ## 有问题或者有想要加的功能可以在issus提交或者可以加入下方的电报群
 [点击此链接加入电报群](https://t.me/joinchat/L68JqRQMroH78jqLI1HdcA)
+## 下方的 [使用说明](#使用说明) 是必须要看的
 
 - [安装Docker](#安装Docker)
   * [1.Debian](#1debian)
@@ -19,6 +20,7 @@
   * [1.拉取项目](#1拉取项目)
   * [2.启动](#2启动)
   * [3.示例](#3示例2)
+- [使用说明](#使用说明)
 - [docker托管地址](#docker托管地址)
 
 # 安装Docker
@@ -172,5 +174,10 @@ docker run -d -p 80:80 mackq/v2ray-websocket-docker
 ```
 vmess://eyJwb3J0IjoiNDQzIiwicHMiOiJxaXU0X2ZyZWUwMUB2MnJheS5jb20iLCJ0bHMiOiJ0bHMiLCJpZCI6ImNjNjg1MzBlLTBjMjMtMTJiNS1mNjE2LTY4Mzk2OTdmZjczZiIsImFpZCI6IjY0IiwidiI6IjIiLCJob3N0IjoiIiwidHlwZSI6Im5vbmUiLCJwYXRoIjoiXC9tYWluUGF0aCIsIm5ldCI6IndzIiwiYWRkIjoidGVzdC5xaXU0Lm1sIn0=
 ```
+# 使用说明
+- 1.默认使用80端口启动
+- 2.仅支持ws+tls模式或者CDN+ws+tls模式
+- 3.如果使用ws+tls，则端口为80，并且没有TLS证书的数据保护。相对于Vmess直连，只是多了于dns解析的过程。
+- 4.如果使用CDN+ws+tls模式，需要CDN配置配置域名并且SSL mode为Flexible，参考[Cloudflare tls Flexible](https://github.com/mack-a/v2ray-agent/blob/master/Cloudflare_Flexible.md#1%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C)，只需要查看 [准备工作] 即可。
 
 # [Docker托管地址](https://hub.docker.com/repository/docker/mackq/v2ray-websocket-docker)
