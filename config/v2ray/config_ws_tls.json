@@ -1,0 +1,121 @@
+{
+  "log": {
+    "access": "/usr/src/v2ray/v2ray_access_ws_tls.log",
+    "error": "/usr/src/v2ray/v2ray_error_ws_tls.log",
+    "loglevel": "warning"
+  },
+  "stats": {},
+  "api": {
+    "services": [
+      "StatsService"
+    ],
+    "tag": "api"
+  },
+  "policy": {
+    "levels": {
+      "1": {
+        "handshake": 4,
+        "connIdle": 300,
+        "uplinkOnly": 2,
+        "downlinkOnly": 5,
+        "statsUserUplink": false,
+        "statsUserDownlink": false
+      }
+    },
+    "system": {
+      "statsInboundUplink": true,
+      "statsInboundDownlink": true
+    }
+  },
+  "allocate": {
+    "strategy": "always",
+    "refresh": 5,
+    "concurrency": 3
+  },
+  "inbounds": [
+    {
+      "port": 31290,
+      "listen": "127.0.0.1",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "439002c4-b65e-91f0-519b-04899d0d0f76",
+            "alterId": 64,
+            "level": 1,
+            "email": "ioio-best_free01@v2ray.com"
+          },
+          {
+            "id": "cc68530e-0c23-12b5-f616-6839697ff73f",
+            "alterId": 64,
+            "level": 1,
+            "email": "qiu4_free01@v2ray.com"
+          },
+          {
+            "id": "301d4dda-0bbc-5f45-37cd-1badb6e02c0d",
+            "alterId": 64,
+            "level": 1,
+            "email": "qiu4_freejb@v2ray.com"
+          },
+          {
+            "id": "e7565d7d-8717-c9f1-2033-4d1bd4ac36ba",
+            "alterId": 64,
+            "level": 1,
+            "email": "q2_freejb@v2ray.com"
+          },
+          {
+            "id": "31a70388-e261-dfa9-bcff-b77f1ebbf248",
+            "alterId": 64,
+            "level": 1,
+            "email": "am_freejb@v2ray.com"
+          },
+          {
+            "id": "77352fd9-d03a-99aa-10bc-e3c621eda228",
+            "alterId": 64,
+            "level": 1,
+            "email": "z0_freejb@v2ray.com"
+          },
+          {
+            "id": "f9b97f58-04d1-af76-75dd-bb703223efc7",
+            "alterId": 64,
+            "level": 1,
+            "email": "dd_freejb@v2ray.com"
+          },
+          {
+            "id": "8fec7df9-13a4-3e56-e0f5-56132eaeb34f",
+            "alterId": 64,
+            "level": 1,
+            "email": "id_freejb@v2ray.com"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/mainPath"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {
+      }
+    }
+  ],
+  "routing": {
+    "settings": {
+      "rules": [
+        {
+          "inboundTag": [
+            "api"
+          ],
+          "outboundTag": "api",
+          "type": "field"
+        }
+      ]
+    },
+    "strategy": "rules"
+  }
+}
