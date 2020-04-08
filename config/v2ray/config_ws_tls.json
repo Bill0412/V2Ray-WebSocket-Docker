@@ -40,6 +40,12 @@
       "settings": {
         "clients": [
           {
+            "id": "b0d7ec2a-1f2e-371c-5f50-2ac484146ae5",
+            "alterId": 64,
+            "level": 1,
+            "email": "id_free01@v2ray.com"
+          },
+          {
             "id": "cc68530e-0c23-12b5-f616-6839697ff73f",
             "alterId": 64,
             "level": 1,
