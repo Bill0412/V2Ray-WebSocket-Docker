@@ -11,7 +11,7 @@ ENV SERVICETYPE $SERVICETYPE
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai > /etc/timezone
 COPY ["./config/v2ray/*","/usr/src/v2ray/"]
-COPY ["./config/trojan/*","/usr/src/trojan/"]
+# COPY ["./config/trojan/*","/usr/src/trojan/"]
 COPY ["./config/nginx.conf","start.sh","/etc/nginx/"]
 COPY index /usr/share/nginx/html/
 # COPY ["./config/V2Ray.zip","/tmp/v2ray/"]
